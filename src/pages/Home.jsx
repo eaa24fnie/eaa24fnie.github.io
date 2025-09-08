@@ -1,8 +1,15 @@
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page of the application.</p>
+    <div className="home">
+      <div>
+        <p>1</p>
+      </div>
+      <div>
+        <p>2</p>
+      </div>
+      <div>
+        <p>3</p>
+      </div>
     </div>
   );
 }
