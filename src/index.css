@@ -66,6 +66,8 @@ body {
   width: 100%;
   padding: 1rem 3rem;
   color: black;
+  position: absolute;
+  top: 0;
 }
 
 .logo a {
@@ -86,13 +88,13 @@ body {
 }
 
 .intro-text {
-  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
   text-align: center;
+  height: 100vh;
 }
 
 .intro-text h2 {
@@ -113,12 +115,14 @@ body {
 }
 
 .bobler {
-  position: relative;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10rem;
 }
 
 .bobler img:nth-child(1) {
-  width: 416px;
+  width: 400px;
 }
 
 .bobler img:nth-child(2) {

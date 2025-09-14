@@ -18,7 +18,7 @@ export default function Bobler() {
         src="/img/gradient-map-bobler-01.png"
         alt="Gradient bobble"
         style={{
-          transform: `translateY(-${offset}px)`, // move up as you scroll
+          transform: `translateY(-${offset * 2}px)`,
           transition: "transform 0.1s linear",
         }}
       />
@@ -26,7 +26,7 @@ export default function Bobler() {
         src="/img/gradient-map-bobler-01.png"
         alt="Gradient bobble"
         style={{
-          transform: `translateY(-${offset}px)`, // move up as you scroll
+          transform: `translateY(-${offset}px)`,
           transition: "transform 0.1s linear",
         }}
       />
