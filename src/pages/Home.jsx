@@ -1,15 +1,18 @@
+import Header from "../components/Header.jsx";
+import Bobler from "../components/Bobler.jsx";
+import ProjectDetails from "./ProjectDetails.jsx";
+
 export default function Home() {
   return (
     <div className="home">
-      <div>
-        <p>1</p>
+      <Header />
+      <div className="intro-text">
+        <h2>Velkommen!</h2>
+        <h1>Jeg er Frederik</h1>
+        <h3>MEDIEGRAFIKER OG MULTIMEDIEDESIGNER FRA AARHUS</h3>
       </div>
-      <div>
-        <p>2</p>
-      </div>
-      <div>
-        <p>3</p>
-      </div>
+      <Bobler />
+      <ProjectDetails />
     </div>
   );
 }
