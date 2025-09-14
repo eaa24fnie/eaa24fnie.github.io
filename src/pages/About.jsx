@@ -5,8 +5,9 @@ export default function About() {
     <div>
       <Header />
 
-      <h1>About Page</h1>
-      <p>This is the about page of the application.</p>
+      <main>
+        <div className="emne erfaring">Erfaring</div>
+      </main>
     </div>
   );
 }
