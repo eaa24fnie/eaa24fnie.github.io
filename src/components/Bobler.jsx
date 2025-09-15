@@ -14,22 +14,70 @@ export default function Bobler() {
 
   return (
     <div className="bobler">
-      <img
-        src="/img/gradient-map-bobler-01.png"
-        alt="Gradient bobble"
+      <div
+        style={{
+          transform: `translateY(-${offset * 5}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-01.png"
+          alt="Gradient bobble"
+          className="bobble bobble-1"
+        />
+      </div>
+
+      <div
+        style={{
+          transform: `translateY(-${offset * 0.5}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-02.png"
+          alt="Gradient bobble"
+          className="bobble bobble-2"
+        />
+      </div>
+
+      <div
+        style={{
+          transform: `translateY(-${offset * 0.4}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-02.png"
+          alt="Gradient bobble"
+          className="bobble bobble-2"
+        />
+      </div>
+
+      <div
         style={{
           transform: `translateY(-${offset * 2}px)`,
           transition: "transform 0.1s linear",
         }}
-      />
-      <img
-        src="/img/gradient-map-bobler-01.png"
-        alt="Gradient bobble"
+      >
+        <img
+          src="/img/gradient-map-bobler-03.png"
+          alt="Gradient bobble"
+          className="bobble bobble-2"
+        />
+      </div>
+
+      <div
         style={{
-          transform: `translateY(-${offset}px)`,
+          transform: `translateY(-${offset * 1.5}px)`,
           transition: "transform 0.1s linear",
         }}
-      />
+      >
+        <img
+          src="/img/gradient-map-bobler-04.png"
+          alt="Gradient bobble"
+          className="bobble bobble-2"
+        />
+      </div>
     </div>
   );
 }

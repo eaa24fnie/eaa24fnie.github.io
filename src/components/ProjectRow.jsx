@@ -8,7 +8,7 @@ export default function ProjecttRow({ client }) {
           <p>{client.kategori}</p>
         </div>
         <h3>{client.title}</h3>
-        <p>{client.description}</p>
+        <p className="brød">{client.description}</p>
         <h4>{client.year}</h4>
         {/* <section className="client-links">
           {client.links.map((link, index) => (

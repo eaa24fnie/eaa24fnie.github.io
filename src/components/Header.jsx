@@ -1,14 +1,15 @@
 import Nav from "./Nav";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <a href="/Home">
+        <NavLink to="/">
           <img src="../../public/img/logo.svg" alt="Frederik Nielsen Logo" />
 
           <p>FREDERIK NIELSEN</p>
-        </a>
+        </NavLink>
       </div>
       <div>
         <Nav />

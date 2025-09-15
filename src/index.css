@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,7 +29,6 @@ body {
   min-height: 100vh;
   font-family: var(--font);
   text-transform: uppercase;
-  background-color: grey;
 }
 
 .navbar {
@@ -67,8 +70,10 @@ body {
   width: 100%;
   padding: 1rem 3rem;
   color: black;
-  position: absolute;
+  position: fixed;
   top: 0;
+  background: white;
+  z-index: 100;
 }
 
 .logo a {
@@ -95,13 +100,14 @@ body {
   align-items: center;
   gap: 0.2rem;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
 }
 
 .intro-text h2 {
   font-size: 8rem;
   color: black;
   font-weight: 900;
+  margin-bottom: -30px;
 }
 
 .intro-text h1 {
@@ -120,14 +126,73 @@ body {
   position: absolute;
   bottom: 0;
   margin-bottom: -10rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.bobler img:nth-child(1) {
-  width: 400px;
+.bobler div img {
+  animation: float 6s ease-in-out infinite;
 }
 
-.bobler img:nth-child(2) {
+/* Each child gets its own delay + duration tweak */
+.bobler div:nth-child(1) img {
+  width: 350px;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+
+.bobler div:nth-child(2) img {
   width: 100px;
+  filter: blur(3px);
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.bobler div:nth-child(3) img {
+  width: 50px;
+  filter: blur(8px);
+  padding-top: 200%;
+  animation-delay: -1s;
+  animation-duration: 4.5s;
+}
+
+.bobler div:nth-child(4) img {
+  width: 250px;
+  padding-top: 50%;
+  animation-delay: -3s;
+  animation-duration: 6.5s;
+}
+
+.bobler div:nth-child(5) img {
+  width: 160px;
+  filter: blur(4px);
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bobble {
+  animation: float 2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.bobble-1 {
+  animation-delay: 0s;
+}
+
+.bobble-2 {
+  animation-delay: 1s; /* slightly different timing */
 }
 
 .project-details {
@@ -238,16 +303,19 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 40vh;
+  margin-bottom: 20vh;
 }
 
 .portfolio-intro h4 {
   font-weight: 800;
   font-size: 4rem;
+  color: var(--primary-color);
+  line-height: 1;
 }
 
 .portfolio-intro h4:nth-child(4) {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .portfolio-intro a img {
@@ -273,6 +341,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
+}
+
+.projekt-beskrivelse .brød {
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin: 1rem 0;
 }
 
 .projekt-beskrivelse h3 {
@@ -287,7 +365,7 @@ body {
 .projekt-beskrivelse h4 {
   font-size: 1rem;
   color: var(--primary-color);
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .kategori {

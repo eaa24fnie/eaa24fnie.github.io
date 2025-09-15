@@ -14,14 +14,11 @@ export default function ProjectDetails() {
 
   return (
     <div className="project-details">
-      <div className="portfolio-intro">
-        <h4>Lorem ipsum dolor sit amet</h4>
-        <h4>Lorem ipsum dolor sit amet</h4>
-        <h4>Lorem ipsum dolor sit amet</h4>
-        <h4>Lorem ipsum dolor sit amet</h4>
-        <a href="@">
-          <img src="	&darr;" alt="	&darr;" />
-        </a>
+      <div className="portfolio-intro" id="portfolio">
+        <h4>Her er en samling af</h4>
+        <h4>nogle af mine</h4>
+        <h4>yndlingsprojekter.</h4>
+        <h4>Se dig omkring.</h4>
       </div>
       <section id="clients">
         {clients.map((client) => (

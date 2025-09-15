@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <>
       <nav className="navbar">
-        <NavLink to="/project">Portfolio</NavLink>
+        <a href="#portfolio">Portfolio</a>
         <NavLink to="/about">Om mig</NavLink>
         <a className="contact-button" onClick={openModal}>
           Kontakt
