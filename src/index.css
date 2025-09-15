@@ -207,6 +207,10 @@ body {
   padding-top: 20vh;
 }
 
+.contact-button {
+  cursor: pointer;
+}
+
 .kontakt-overlay {
   display: flex;
   position: absolute;
@@ -225,6 +229,7 @@ body {
 
 .kontakt-overlay a img {
   width: 30px;
+  cursor: pointer;
 }
 
 .kontakt-overlay ul {
@@ -244,11 +249,11 @@ body {
 .emne {
   color: white;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.5rem;
   background: var(--primary-color);
   width: auto;
   position: absolute;
-  padding: 0.5rem 3rem 0.5rem 2rem;
+  padding: 0.5rem 2rem;
   top: 0;
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
   transition: 0.5s;
@@ -256,44 +261,73 @@ body {
 
 .fritid {
   margin-left: 10rem;
+  transform: rotate(15deg);
   top: 25vh;
   left: 0;
+  transform-origin: right center;
+  background: var(--secondary-color);
+  padding-right: 4rem;
 }
 
 .uddannelse {
   margin-left: 10rem;
-  top: 50vh;
+  transform: rotate(-15deg);
+
+  top: 40vh;
   left: 0;
+  transform-origin: right center;
+  padding-right: 4rem;
 }
 
 .erfaring {
   margin-right: 10rem;
+  transform: rotate(-15deg);
   right: 0;
   top: 25vh;
   clip-path: polygon(100% 0%, 10% 0%, 0% 50%, 10% 100%, 100% 100%);
+  transform-origin: left center;
+  padding-left: 4rem;
 }
 
 .funfact {
   margin-right: 10rem;
+  transform: rotate(15deg);
   right: 0;
-  top: 50vh;
+  top: 40vh;
   clip-path: polygon(100% 0%, 10% 0%, 0% 50%, 10% 100%, 100% 100%);
+  transform-origin: left center;
+  background: var(--secondary-color);
+  padding-left: 4rem;
 }
 
 .emne:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .hoved {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 .hoved-mig {
-  width: 30%;
+  width: 25%;
   height: auto;
+  transition: transform 0.4s ease;
+}
+
+.hoved h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.eyes {
+  background-color: #5d02f9;
+  transition: transform 0.4s ease;
 }
 
 .portfolio-intro {
