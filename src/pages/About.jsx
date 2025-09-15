@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Header from "../components/Header.jsx";
 
 export default function About() {
@@ -13,58 +13,74 @@ export default function About() {
     transform: "translate(0px, 0px)",
   });
 
-  const moveHeadToward = (e) => {
-    if (!headRef.current) return;
+  const [gitterTransform, setGitterTransform] = useState({
+    transform: "translate(0px, 0px)",
+  });
 
-    const target = e.currentTarget.getBoundingClientRect();
-    const head = headRef.current.getBoundingClientRect();
+  const [eyebrowTransform, setEyebrowTransform] = useState({
+    transform: "translate(0px, 0px)",
+  });
 
-    const dx = Math.max(
-      -70,
-      Math.min(
-        70,
-        (target.left + target.width / 2 - (head.left + head.width / 2)) * 0.22
-      )
-    );
-    const dy = Math.max(
-      -70,
-      Math.min(
-        70,
-        (target.top + target.height / 2 - (head.top + head.height / 2)) * 0.22
-      )
-    );
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      if (!headRef.current) return;
 
-    setHeadTransform({ transform: `translate(${dx}px, ${dy}px)` });
-  };
+      const head = headRef.current.getBoundingClientRect();
+      const headCenterX = head.left + head.width / 2;
+      const headCenterY = head.top + head.height / 2;
 
-  const moveEyesToward = (e) => {
-    if (!eyesRef.current || !headRef.current) return;
+      const dxHead = Math.max(
+        -100,
+        Math.min(70, (e.clientX - headCenterX) * 0.05)
+      );
+      const dyHead = Math.max(
+        -100,
+        Math.min(70, (e.clientY - headCenterY) * 0.05)
+      );
 
-    const target = e.currentTarget.getBoundingClientRect();
-    const head = headRef.current.getBoundingClientRect();
+      setHeadTransform({ transform: `translate(${dxHead}px, ${dyHead}px)` });
 
-    const dx = Math.max(
-      -5,
-      Math.min(
-        5,
-        (target.left + target.width / 2 - (head.left + head.width / 2)) * 0.22
-      )
-    );
-    const dy = Math.max(
-      -3,
-      Math.min(
-        3,
-        (target.top + target.height / 2 - (head.top + head.height / 2)) * 0.22
-      )
-    );
+      const dxEyes = Math.max(
+        -10,
+        Math.min(5, (e.clientX - headCenterX) * 0.02)
+      );
+      const dyEyes = Math.max(
+        -20,
+        Math.min(3, (e.clientY - headCenterY) * 0.02)
+      );
 
-    setEyesTransform({ transform: `translate(${dx}px, ${dy}px)` });
-  };
+      setEyesTransform({ transform: `translate(${dxEyes}px, ${dyEyes}px)` });
 
-  const resetHead = () =>
-    setHeadTransform({ transform: "translate(0px, 0px) rotate(0deg)" });
-  const resetEyes = () =>
-    setEyesTransform({ transform: "translate(0px, 0px)" });
+      const dxGitter = Math.max(
+        -100,
+        Math.min(70, (e.clientX - headCenterX) * 0.05)
+      );
+      const dyGitter = Math.max(
+        -100,
+        Math.min(70, (e.clientY - headCenterY) * 0.05)
+      );
+
+      setGitterTransform({
+        transform: `translate(-${dxGitter}px, ${-dyGitter}px)`,
+      });
+
+      const dxEyebrow = Math.max(
+        -5,
+        Math.min(5, (e.clientX - headCenterX) * 0.02)
+      );
+      const dyEyebrow = Math.max(
+        -20,
+        Math.min(3, (e.clientY - headCenterY) * 0.02)
+      );
+
+      setEyebrowTransform({
+        transform: `translate(-${dxEyebrow}px, ${-dyEyebrow}px)`,
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
 
   return (
     <div>
@@ -72,32 +88,8 @@ export default function About() {
 
       <div className="aboutme">
         <div>
-          <div
-            className="emne fritid"
-            onMouseEnter={(e) => {
-              moveHeadToward(e);
-              moveEyesToward(e);
-            }}
-            onMouseLeave={() => {
-              resetHead();
-              resetEyes();
-            }}
-          >
-            Fritid
-          </div>
-          <div
-            className="emne uddannelse"
-            onMouseEnter={(e) => {
-              moveHeadToward(e);
-              moveEyesToward(e);
-            }}
-            onMouseLeave={() => {
-              resetHead();
-              resetEyes();
-            }}
-          >
-            Uddannelse
-          </div>
+          <div className="emne fritid">Fritid</div>
+          <div className="emne uddannelse">Uddannelse</div>
         </div>
 
         <div className="hoved">
@@ -154,22 +146,25 @@ export default function About() {
               className="st1"
               d="M156,168.8v18l-15.9,12.7-4-3.9v-9.2l-12.8-2.3-12.8,2.3v9.2l-4,3.9-15.9-12.7v-18s5.7,6.8,32.7,6.8,32.7-6.8,32.7-6.8Z"
             />
-            <rect
-              className="eyebrows"
-              x="141.1"
-              y="49.2"
-              width="53.9"
-              height="16.3"
-              transform="translate(8.6 -20.7) rotate(7.2)"
-            />
-            <rect
-              className="eyebrows"
-              x="52.4"
-              y="49.2"
-              width="53.9"
-              height="16.3"
-              transform="translate(165.3 104.3) rotate(172.8)"
-            />
+            <g className="eyebrow" style={eyebrowTransform}>
+              <rect
+                className="eyebrows"
+                x="141.1"
+                y="49.2"
+                width="53.9"
+                height="16.3"
+                transform="translate(8.6 -20.7) rotate(7.2)"
+              />
+              <rect
+                className="eyebrows"
+                x="52.4"
+                y="49.2"
+                width="53.9"
+                height="16.3"
+                transform="translate(165.3 104.3) rotate(172.8)"
+              />
+            </g>
+
             <path
               className="st0"
               d="M156,168.8s-5.7,6.8-32.7,6.8-32.7-6.8-32.7-6.8c0,0,5.7-6.8,32.7-6.8s32.7,6.8,32.7,6.8Z"
@@ -178,36 +173,17 @@ export default function About() {
           </svg>
           <h3>JEG ER FREDERIK!</h3>
           <div></div>
-          <img className="gitter" src="../../public/img/gitter.svg" alt="" />
+          <img
+            style={gitterTransform}
+            className="gitter"
+            src="../../public/img/gitter.svg"
+            alt=""
+          />
         </div>
 
         <div>
-          <div
-            className="emne erfaring"
-            onMouseEnter={(e) => {
-              moveHeadToward(e);
-              moveEyesToward(e);
-            }}
-            onMouseLeave={() => {
-              resetHead();
-              resetEyes();
-            }}
-          >
-            Erfaring
-          </div>
-          <div
-            className="emne funfact"
-            onMouseEnter={(e) => {
-              moveHeadToward(e);
-              moveEyesToward(e);
-            }}
-            onMouseLeave={() => {
-              resetHead();
-              resetEyes();
-            }}
-          >
-            Fun Fact
-          </div>
+          <div className="emne erfaring">Erfaring</div>
+          <div className="emne funfact">Fun Fact</div>
         </div>
       </div>
     </div>
