@@ -1,8 +1,13 @@
 export default function ProjectDetails() {
   return (
     <div className="project-details">
-      <h1>Project Details Page</h1>
-      <p>This page provides detailed information about a specific project.</p>
+      <div className="portfolio-intro">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <h4>Lorem ipsum dolor sit amet</h4>
+      </div>
+      <div></div>
     </div>
   );
 }

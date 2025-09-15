@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <a href="/">
+        <a href="/Home">
           <img src="../../public/img/logo.svg" alt="Frederik Nielsen Logo" />
 
           <p>FREDERIK NIELSEN</p>
