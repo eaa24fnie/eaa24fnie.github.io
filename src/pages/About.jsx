@@ -178,6 +178,7 @@ export default function About() {
           </svg>
           <h3>JEG ER FREDERIK!</h3>
           <div></div>
+          <img className="gitter" src="../../public/img/gitter.svg" alt="" />
         </div>
 
         <div>
