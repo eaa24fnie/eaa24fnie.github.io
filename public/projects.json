@@ -1,9 +1,51 @@
-{
-  "id": 1,
-  "title": "Portfolio Website",
-  "year": 2025,
-  "description": "Mit portfolio bygget med React.",
-  "tags": ["React", "Portfolio", "Frontend"],
-  "image": "/img/portfolio.webp",
-  "links": [{ "url": "https://eaa24fnie.github.io", "text": "React Portfolio" }]
-}
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "year": 2025,
+    "description": "Mit portfolio bygget med React.",
+    "tags": ["React", "Portfolio", "Frontend"],
+    "kategori": "skole",
+    "image": "/img/placeholder.png",
+    "links": [
+      {
+        "url": "https://eaa24fnie.github.io",
+        "text": "React Portfolio"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Blog Platform",
+    "year": 2024,
+    "description": "En simpel blogplatform lavet med Node.js og Express.",
+    "tags": ["Node.js", "Express", "Backend"],
+    "kategori": "Arbejde",
+    "image": "/img/placeholder.png",
+    "links": [
+      {
+        "url": "https://example.com/blog",
+        "text": "Live Demo"
+      },
+      {
+        "url": "https://github.com/username/blog-platform",
+        "text": "GitHub Repo"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "E-commerce App",
+    "year": 2025,
+    "description": "En fuldt funktionel webshop med Stripe-integration.",
+    "tags": ["Vue", "E-commerce", "Stripe"],
+    "kategori": "Personlig",
+    "image": "/img/placeholder.png",
+    "links": [
+      {
+        "url": "https://example.com/shop",
+        "text": "Se webshoppen"
+      }
+    ]
+  }
+]
