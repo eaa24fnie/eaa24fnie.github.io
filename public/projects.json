@@ -4,7 +4,6 @@
     "title": "ZeroBuzzBrew",
     "year": 2025,
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare velit non mollis. Curabitur quis dictum nisl. Phasellus vel semper risus, et lacinia dolor. Integer ultricies commodo sem nec semper.",
-    "tags": ["React", "Portfolio", "Frontend"],
     "kategori": "skole",
     "image": "/img/zerobuzz-mockup.png",
     "links": [
@@ -19,7 +18,6 @@
     "title": "Merrild",
     "year": 2023,
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare velit non mollis. Curabitur quis dictum nisl. Phasellus vel semper risus, et lacinia dolor. Integer ultricies commodo sem nec semper.",
-    "tags": ["Node.js", "Express", "Backend"],
     "kategori": "Arbejde",
     "image": "/img/merrild-pos.png",
     "links": [
@@ -38,7 +36,6 @@
     "title": "Radar",
     "year": 2024,
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare velit non mollis. Curabitur quis dictum nisl. Phasellus vel semper risus, et lacinia dolor. Integer ultricies commodo sem nec semper.",
-    "tags": ["Vue", "E-commerce", "Stripe"],
     "kategori": "Skole",
     "image": "/img/radar-mockup.png",
     "links": [

@@ -5,7 +5,7 @@ export default function ProjectDetails() {
   const [clients, setClients] = useState([]);
   useEffect(() => {
     async function getData() {
-      const response = await fetch("././public/projects.json");
+      const response = await fetch("/public/projects.json");
       const data = await response.json();
       setClients(data);
     }
