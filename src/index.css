@@ -29,6 +29,7 @@ body {
   min-height: 100vh;
   font-family: var(--font);
   text-transform: uppercase;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -115,14 +116,14 @@ body::before {
 }
 
 .intro-text h2 {
-  font-size: 14rem;
+  font-size: 11vw;
   color: black;
   font-weight: 900;
   margin-bottom: -30px;
 }
 
 .intro-text h1 {
-  font-size: 5rem;
+  font-size: 6vw;
   font-weight: 900;
   color: var(--primary-color);
 }
@@ -138,7 +139,7 @@ body::before {
   bottom: 0;
   margin-bottom: -15rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   pointer-events: none;
   user-select: none;
 }
@@ -163,7 +164,7 @@ body::before {
 
 .bobler div:nth-child(3) img {
   width: 3vw;
-  filter: blur(8px);
+  filter: blur(12px);
   padding-top: 300%;
   animation-delay: -1s;
   animation-duration: 4.5s;
