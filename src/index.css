@@ -204,6 +204,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10%;
 }
 
 .portfolio-side {
@@ -548,6 +549,12 @@ body {
   font-size: 4rem;
 }
 
+.carousel-intro-p {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-top: 2%;
+}
+
 .carousel {
   width: 100%;
   overflow-x: auto;
@@ -564,6 +571,10 @@ body {
   height: 60vh;
   gap: 2rem;
   scroll-snap-align: center;
+}
+
+.carousel-info {
+  text-align: center;
 }
 
 .carousel-info img {
@@ -607,6 +618,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 2rem 5rem;
+  margin-top: 5%;
 }
 
 .socials {

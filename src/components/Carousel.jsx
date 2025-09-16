@@ -34,7 +34,9 @@ export default function Carousel() {
         <div className="kategori">
           <p>PERSONLIG</p>
         </div>
-        <p>Jeg holder mig kreativ ved at designe plakater i min fritid</p>
+        <p className="carousel-intro-p">
+          Jeg holder mig kreativ ved at designe plakater i min fritid
+        </p>
       </div>
 
       <div className="carousel">
