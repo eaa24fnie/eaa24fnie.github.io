@@ -518,6 +518,15 @@ body {
   font-weight: 800;
 }
 
+.projekt-billede {
+  width: 40%;
+  height: auto;
+}
+
+.projekt-billede img {
+  width: 100%;
+}
+
 .kategori {
   background: var(--secondary-color);
   width: fit-content;
