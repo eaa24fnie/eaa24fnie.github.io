@@ -12,6 +12,7 @@ export default function Home() {
         <h2>Velkommen!</h2>
         <h1>Jeg er Frederik</h1>
         <h3>MEDIEGRAFIKER OG MULTIMEDIEDESIGNER FRA AARHUS</h3>
+        <img className="gitter" src="/img/gitter.svg" alt="" />
       </div>
       <Bobler />
       <ProjectDetails />

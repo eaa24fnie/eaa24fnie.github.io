@@ -115,11 +115,7 @@ export default function About() {
           >
             Fritid
           </button>
-          <img
-            className="football"
-            src="../../public/img/football.svg"
-            alt=""
-          />
+          <img className="football" src="/img/football.svg" alt="" />
           <button
             className="emne erfaring"
             onClick={() =>
@@ -224,7 +220,7 @@ export default function About() {
           <img
             style={gitterTransform}
             className="gitter"
-            src="../../public/img/gitter.svg"
+            src="/img/gitter.svg"
             alt=""
           />
         </div>
@@ -309,11 +305,7 @@ export default function About() {
             Fun Fact
           </button>
 
-          <img
-            className="building"
-            src="../../public/img/building.svg"
-            alt=""
-          />
+          <img className="building" src="/img/building.svg" alt="" />
         </div>
       </div>
       <div className="tekstboks">
