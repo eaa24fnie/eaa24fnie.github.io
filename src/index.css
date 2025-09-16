@@ -24,11 +24,22 @@ html {
 
 body {
   display: flex;
-  flex-direction: column; /* make children stack vertically */
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
   font-family: var(--font);
   text-transform: uppercase;
+}
+
+body::before {
+  content: "";
+  inset: 0;
+  background: url("img/grain.png") repeat;
+  opacity: 0.05;
+  z-index: 10;
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
 }
 
 .navbar {
@@ -311,6 +322,26 @@ body {
   padding-right: 4rem;
 }
 
+.book {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  width: 500px;
+  top: 0;
+  left: 35vw;
+  transition: 0.5s;
+  scale: 0.1;
+}
+
+.erfaring:hover + .book {
+  display: block;
+  left: 42vw;
+  scale: 0.5;
+  top: -20px;
+  transform: rotate(20deg);
+}
+
 .kompetancer {
   margin-right: 10rem;
   transform: rotate(-15deg);
@@ -319,6 +350,26 @@ body {
   clip-path: polygon(100% 0%, 10% 0%, 0% 50%, 10% 100%, 100% 100%);
   transform-origin: left center;
   padding-left: 4rem;
+}
+
+.puzzle {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  width: 500px;
+  top: 0;
+  left: 35vw;
+  transition: 0.5s;
+  scale: 0.1;
+}
+
+.kompetancer:hover + .puzzle {
+  display: block;
+  left: 27vw;
+  scale: 0.4;
+  top: -100px;
+  transform: rotate(20deg);
 }
 
 .kompetancer-ikoner {

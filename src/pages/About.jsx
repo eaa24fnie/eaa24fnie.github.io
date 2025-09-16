@@ -136,6 +136,7 @@ export default function About() {
           >
             Erfaring
           </button>
+          <img className="book" src="/img/book.svg" alt="" />
         </div>
 
         <div className="hoved">
@@ -285,8 +286,9 @@ export default function About() {
               )
             }
           >
-            Kompetancer
+            Kompetencer
           </button>
+          <img className="puzzle" src="/img/puzzle.svg" alt="" />
           <button
             className="emne funfact"
             onClick={() =>
