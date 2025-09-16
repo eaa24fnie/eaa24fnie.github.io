@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <div className="logo">
         <NavLink to="/">
-          <img src="../../public/img/logo.svg" alt="Frederik Nielsen Logo" />
+          <img src="/img/logo.svg" alt="Frederik Nielsen Logo" />
 
           <p>FREDERIK NIELSEN</p>
         </NavLink>
