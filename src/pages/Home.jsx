@@ -2,6 +2,7 @@ import Header from "../components/Header.jsx";
 import Bobler from "../components/Bobler.jsx";
 import ProjectDetails from "./ProjectDetails.jsx";
 import Carousel from "../components/Carousel.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Bobler />
       <ProjectDetails />
       <Carousel />
+      <Footer />
     </div>
   );
 }
