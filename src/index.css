@@ -72,7 +72,6 @@ body {
   color: black;
   position: fixed;
   top: 0;
-  background: white;
   z-index: 100;
 }
 
@@ -250,6 +249,16 @@ body {
   width: 30px;
 }
 
+.aboutme div button {
+  text-decoration: none;
+  border: none;
+}
+
+.aboutme {
+  height: 70vh;
+  padding-top: 5%;
+}
+
 .emne {
   color: white;
   font-weight: 700;
@@ -273,17 +282,35 @@ body {
   padding-right: 4rem;
 }
 
-.uddannelse {
+.football {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  width: 500px;
+  top: 0;
+  left: 35vw;
+  transition: 0.5s;
+  scale: 0.1;
+}
+
+.fritid:hover + .football {
+  display: block;
+  left: 42vw;
+  scale: 0.5;
+  top: -80px;
+}
+
+.erfaring {
   margin-left: 10rem;
   transform: rotate(-15deg);
-
   top: 40vh;
   left: 0;
   transform-origin: right center;
   padding-right: 4rem;
 }
 
-.erfaring {
+.kompetancer {
   margin-right: 10rem;
   transform: rotate(-15deg);
   right: 0;
@@ -291,6 +318,25 @@ body {
   clip-path: polygon(100% 0%, 10% 0%, 0% 50%, 10% 100%, 100% 100%);
   transform-origin: left center;
   padding-left: 4rem;
+}
+
+.kompetancer-ikoner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.kompetancer-ikoner a img {
+  width: auto;
+  height: 80px;
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.kompetancer-ikoner a img:hover {
+  transform: scale(1.2);
 }
 
 .funfact {
@@ -304,6 +350,26 @@ body {
   padding-left: 4rem;
 }
 
+.building {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  width: 500px;
+  top: 0;
+  left: 35vw;
+  transition: 0.5s;
+  scale: 0.1;
+}
+
+.funfact:hover + .building {
+  display: block;
+  left: 30vw;
+  scale: 0.5;
+  top: -100px;
+  transform: rotate(-20deg);
+}
+
 .emne:hover {
   transform: scale(1.2);
   cursor: pointer;
@@ -314,7 +380,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .hoved-mig {
@@ -323,10 +389,12 @@ body {
   transition: transform 0.4s ease;
 }
 
-.hoved h3 {
+.navn {
   font-size: 3rem;
   color: var(--primary-color);
   font-weight: 800;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .hoved-mig {
@@ -346,12 +414,36 @@ body {
   width: 40%;
   position: absolute;
   pointer-events: none;
-  z-index: -1;
+  z-index: -1000;
   transition: transform 0.15s ease-out;
 }
 
 .eyebrow {
   transition: transform 0.15s ease-out;
+}
+
+.mig-tekst {
+  width: fit-content;
+  max-width: 50%;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 300;
+  line-height: 2rem;
+  text-transform: none;
+}
+
+.tekstboks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.about-div {
+  height: 100vh;
 }
 
 .portfolio-intro {

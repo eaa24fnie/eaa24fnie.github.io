@@ -21,6 +21,16 @@ export default function About() {
     transform: "translate(0px, 0px)",
   });
 
+  const [text, setText] = useState(
+    <>
+      <h3 className="navn">JEG ER FREDERIK!</h3>
+      <p>
+        Uddannet mediegrafiker og i gang med multimediedesigner-uddannelsen{" "}
+        <br /> – da jeg sætter pris på design i alle former.
+      </p>
+    </>
+  );
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       if (!headRef.current) return;
@@ -83,13 +93,53 @@ export default function About() {
   }, []);
 
   return (
-    <div>
+    <div className="about-div">
       <Header />
 
       <div className="aboutme">
         <div>
-          <div className="emne fritid">Fritid</div>
-          <div className="emne uddannelse">Uddannelse</div>
+          <button
+            className="emne fritid"
+            onClick={() =>
+              setText(
+                <>
+                  <p>
+                    Når jeg ikke arbejder med design, ser du mig enten med næsen
+                    i fodbold, på jagt efter ny musik eller i fuld gang med at
+                    udvide min nærmest encyklopædiske viden om skuespillere fra
+                    de sidste 30 år.
+                  </p>
+                </>
+              )
+            }
+          >
+            Fritid
+          </button>
+          <img
+            className="football"
+            src="../../public/img/football.svg"
+            alt=""
+          />
+          <button
+            className="emne erfaring"
+            onClick={() =>
+              setText(
+                <>
+                  <h3 className="navn">Arbejde & skole</h3>
+                  <p>
+                    Mediegrafiker på Syddansk Erhvervskole - 2016 - 2020 <br />
+                    Forskellige småjobs og freelanceopgaver – 2020 - 2022
+                    <br /> Grafisk designer hos Liat Hansen Reklame - 2022 -
+                    2024
+                    <br />
+                    Multimediedesign på Erhvervsakademi Aarhus - 2024 -
+                  </p>
+                </>
+              )
+            }
+          >
+            Erfaring
+          </button>
         </div>
 
         <div className="hoved">
@@ -171,8 +221,6 @@ export default function About() {
             />
             <polygon points="123.3 76.8 96.6 151.7 123.3 146.5 123.3 76.8" />
           </svg>
-          <h3>JEG ER FREDERIK!</h3>
-          <div></div>
           <img
             style={gitterTransform}
             className="gitter"
@@ -182,9 +230,94 @@ export default function About() {
         </div>
 
         <div>
-          <div className="emne erfaring">Erfaring</div>
-          <div className="emne funfact">Fun Fact</div>
+          <button
+            className="emne kompetancer"
+            onClick={() =>
+              setText(
+                <>
+                  <div className="kompetancer-ikoner">
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </>
+              )
+            }
+          >
+            Kompetancer
+          </button>
+          <button
+            className="emne funfact"
+            onClick={() =>
+              setText(
+                <>
+                  <h3 className="navn">Arkitekturens Hall of Shame</h3>
+
+                  <p>
+                    Jeg har længe været på en pilgrimsrejse efter verdens
+                    grimmeste bygning
+                  </p>
+                </>
+              )
+            }
+          >
+            Fun Fact
+          </button>
+
+          <img
+            className="building"
+            src="../../public/img/building.svg"
+            alt=""
+          />
         </div>
+      </div>
+      <div className="tekstboks">
+        <div className="mig-tekst">{text}</div>
       </div>
     </div>
   );
