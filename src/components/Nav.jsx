@@ -31,30 +31,18 @@ export default function Nav() {
       {isModalOpen && (
         <div className="kontakt" onClick={closeModal}>
           <div className="kontakt-overlay" onClick={(e) => e.stopPropagation()}>
-            <p>EMAIL</p>
-            <ul>
-              <li>
-                {" "}
-                <img
-                  src="https://thumbs.dreamstime.com/b/vector-placeholder-upload-profile-picture-design-minimalistic-features-simple-circular-symbol-representing-352593011.jpg"
-                  alt=""
-                />
-              </li>
-              <li>
-                {" "}
-                <img
-                  src="https://thumbs.dreamstime.com/b/vector-placeholder-upload-profile-picture-design-minimalistic-features-simple-circular-symbol-representing-352593011.jpg"
-                  alt=""
-                />
-              </li>
-              <li>
-                {" "}
-                <img
-                  src="https://thumbs.dreamstime.com/b/vector-placeholder-upload-profile-picture-design-minimalistic-features-simple-circular-symbol-representing-352593011.jpg"
-                  alt=""
-                />
-              </li>
-            </ul>
+            <p>fnielsen1@live.dk</p>
+            <div className="socials">
+              <a href="https://www.linkedin.com/feed/">
+                <img src="/img/linkedin.png" alt="Linkedin" />
+              </a>
+              <a href="https://dribbble.com/FrederikNielsen">
+                <img src="/img/dribbble.png" alt="Dribbble" />
+              </a>
+              <a href="https://www.behance.net/frederiknielsen11">
+                <img src="/img/behance.png" alt="Behance" />
+              </a>
+            </div>
             <a onClick={closeModal}>
               <img src="../../public/img/luk.svg" alt="" />
             </a>

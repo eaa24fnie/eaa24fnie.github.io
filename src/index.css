@@ -230,9 +230,10 @@ body::before {
 .kontakt-overlay {
   display: flex;
   position: absolute;
-  flex-direction: row;
   background: var(--secondary-color);
   padding: 1rem 2rem;
+  gap: 2rem;
+  right: 0;
 }
 
 .kontakt-overlay p {
@@ -244,7 +245,7 @@ body::before {
 }
 
 .kontakt-overlay a img {
-  width: 30px;
+  width: 20px;
   cursor: pointer;
 }
 
@@ -258,7 +259,7 @@ body::before {
   margin-right: 1rem;
 }
 
-.kontakt-overlay ul li img {
+.kontakt-overlay .socials img {
   width: 30px;
 }
 
