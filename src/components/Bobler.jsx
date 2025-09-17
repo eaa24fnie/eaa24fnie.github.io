@@ -68,6 +68,58 @@ export default function Bobler() {
 
       <div
         style={{
+          transform: `translateY(-${offset * 0.4}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-04.png"
+          alt="Gradient bobble"
+          className="bobble bobble-2"
+        />
+      </div>
+
+      <div
+        style={{
+          transform: `translateY(-${offset * 1}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-04.png"
+          alt="Gradient bobble"
+          className="bobble bobble-1"
+        />
+      </div>
+
+      <div
+        style={{
+          transform: `translateY(-${offset * 1.5}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-04.png"
+          alt="Gradient bobble"
+          className="bobble bobble-1"
+        />
+      </div>
+
+      <div
+        style={{
+          transform: `translateY(-${offset * 0.4}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-04.png"
+          alt="Gradient bobble"
+          className="bobble bobble-1"
+        />
+      </div>
+
+      <div
+        style={{
           transform: `translateY(-${offset * 1.5}px)`,
           transition: "transform 0.1s linear",
         }}
@@ -81,27 +133,14 @@ export default function Bobler() {
 
       <div
         style={{
-          transform: `translateY(-${offset * 1.5}px)`,
+          transform: `translateY(-${offset * 2}px)`,
           transition: "transform 0.1s linear",
         }}
       >
         <img
           src="/img/gradient-map-bobler-04.png"
           alt="Gradient bobble"
-          className="bobble bobble-1"
-        />
-      </div>
-
-      <div
-        style={{
-          transform: `translateY(-${offset * 1.5}px)`,
-          transition: "transform 0.1s linear",
-        }}
-      >
-        <img
-          src="/img/gradient-map-bobler-04.png"
-          alt="Gradient bobble"
-          className="bobble bobble-1"
+          className="bobble bobble-2"
         />
       </div>
     </div>

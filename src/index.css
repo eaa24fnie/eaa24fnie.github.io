@@ -197,11 +197,57 @@ body::before {
   animation-duration: 5.8s;
 }
 
+.bobler div:nth-child(7) {
+  position: absolute;
+  left: 0;
+  margin-left: 5vw;
+}
+
 .bobler div:nth-child(7) img {
-  width: 4vw;
+  width: 10vw;
   animation-delay: -0.5s;
   animation-duration: 5.8s;
   left: 0;
+  z-index: 5;
+}
+
+.bobler div:nth-child(8) {
+  position: absolute;
+  right: 5vw;
+  margin: 40vw 0 0 5vw;
+}
+
+.bobler div:nth-child(8) img {
+  width: 4vw;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+  filter: blur(15px);
+  z-index: 5;
+}
+
+.bobler div:nth-child(9) {
+  position: absolute;
+  right: -5vw;
+  margin: 40vw 0 0 5vw;
+}
+
+.bobler div:nth-child(9) img {
+  width: 16vw;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+  z-index: 5;
+}
+
+.bobler div:nth-child(10) {
+  position: absolute;
+  left: 0;
+  margin: 65vw 0 0 5vw;
+}
+
+.bobler div:nth-child(10) img {
+  width: 8vw;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
   z-index: 5;
 }
 
