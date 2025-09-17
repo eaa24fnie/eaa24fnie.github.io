@@ -18,6 +18,8 @@ html {
 
   --primary-color: #5d02f9;
   --secondary-color: #ff5151;
+  --black: rgb(19, 19, 19);
+  --white: white;
 
   --font: "Lexend", sans-serif;
 }
@@ -178,7 +180,6 @@ body::before {
   filter: blur(3px);
   animation-delay: -3s;
   animation-duration: 6.5s;
-  mix-blend-mode: exclusion;
 }
 
 .bobler div:nth-child(5) img {
@@ -194,6 +195,14 @@ body::before {
   padding-top: 50%;
   animation-delay: -0.5s;
   animation-duration: 5.8s;
+}
+
+.bobler div:nth-child(7) img {
+  width: 4vw;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+  left: 0;
+  z-index: 5;
 }
 
 @keyframes float {

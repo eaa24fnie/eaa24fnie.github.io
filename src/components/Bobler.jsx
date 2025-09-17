@@ -91,6 +91,19 @@ export default function Bobler() {
           className="bobble bobble-1"
         />
       </div>
+
+      <div
+        style={{
+          transform: `translateY(-${offset * 1.5}px)`,
+          transition: "transform 0.1s linear",
+        }}
+      >
+        <img
+          src="/img/gradient-map-bobler-04.png"
+          alt="Gradient bobble"
+          className="bobble bobble-1"
+        />
+      </div>
     </div>
   );
 }
