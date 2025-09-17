@@ -589,6 +589,11 @@ body::before {
   color: white;
 }
 
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .carousel-intro {
   display: flex;
   flex-direction: column;
@@ -621,12 +626,13 @@ body::before {
 
 .carousel-container {
   display: flex;
-  height: 60vh;
+  height: 70vh;
   gap: 2rem;
   scroll-snap-align: center;
 }
 
 .carousel-info {
+  flex: 0 0 calc(100% / 3);
   text-align: center;
 }
 
@@ -655,6 +661,7 @@ body::before {
 
 .carousel-name {
   display: none;
+  font-size: 1rem;
 }
 
 .carousel-info img:hover + .carousel-name {
