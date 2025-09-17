@@ -1,7 +1,6 @@
 import { NavLink } from "react-router";
 
 export default function ProjecttRow({ client }) {
-  console.log(client.description);
   return (
     <section className="project-row">
       <div className="projekt-beskrivelse">
@@ -15,7 +14,20 @@ export default function ProjecttRow({ client }) {
           ))}
         </div>
 
-        <h4>{client.year}</h4>
+        <div className="year-link">
+          <h4>{client.year}</h4>
+          <div className="links">
+            {client.links &&
+              client.links.length > 0 &&
+              client.links.map((link, index) => (
+                <h4 key={index}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.text}
+                  </a>
+                </h4>
+              ))}
+          </div>
+        </div>
       </div>
       <div className="projekt-billede">
         <img src={client.image} alt={client.title} />

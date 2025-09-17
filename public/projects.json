@@ -12,8 +12,8 @@
     "image": "/img/zerobuzz-mockup.png",
     "links": [
       {
-        "url": "https://eaa24fnie.github.io",
-        "text": "React Portfolio"
+        "url": "https://zerobuzzbrew.frederik-n.dk/",
+        "text": "Se løsningen her"
       }
     ]
   },
@@ -30,16 +30,7 @@
     ],
     "kategori": "Arbejde",
     "image": "/img/udvalg.png",
-    "links": [
-      {
-        "url": "https://example.com/blog",
-        "text": "Live Demo"
-      },
-      {
-        "url": "https://github.com/username/blog-platform",
-        "text": "GitHub Repo"
-      }
-    ]
+    "links": []
   },
   {
     "id": 3,
@@ -54,8 +45,8 @@
     "image": "/img/radar-mockup.png",
     "links": [
       {
-        "url": "https://example.com/shop",
-        "text": "Se webshoppen"
+        "url": "https://radar.frederik-n.dk/",
+        "text": "Se løsningen her"
       }
     ]
   }

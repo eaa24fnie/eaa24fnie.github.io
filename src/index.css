@@ -33,6 +33,7 @@ body {
   text-transform: uppercase;
   overflow-x: hidden;
   cursor: crosshair;
+  background: var(--white);
 }
 
 body::before {
@@ -625,6 +626,26 @@ body::before {
 
 .brød p {
   padding-bottom: 1rem;
+}
+
+.links {
+  background: var(--secondary-color);
+  width: fit-content;
+}
+
+.links h4 {
+  padding: 1rem 2rem;
+}
+
+.links h4 a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.year-link {
+  display: flex;
+  justify-content: space-between;
 }
 
 .projekt-beskrivelse h3 {
