@@ -30,17 +30,19 @@ body {
   font-family: var(--font);
   text-transform: uppercase;
   overflow-x: hidden;
+  cursor: crosshair;
 }
 
 body::before {
   content: "";
   inset: 0;
-  background: url("img/grain.png") repeat;
-  opacity: 0.05;
+  background: url(img/grain.png) repeat;
   z-index: 10;
+  opacity: 0.4;
   position: fixed;
   pointer-events: none;
   user-select: none;
+  mix-blend-mode: lighten;
 }
 
 .navbar {
@@ -156,7 +158,7 @@ body::before {
 
 .bobler div:nth-child(2) img {
   width: 6vw;
-  filter: blur(3px);
+  filter: blur(7px);
   padding-top: 100%;
   animation-delay: -2s;
   animation-duration: 7s;
@@ -164,7 +166,7 @@ body::before {
 
 .bobler div:nth-child(3) img {
   width: 3vw;
-  filter: blur(12px);
+  filter: blur(14px);
   padding-top: 300%;
   animation-delay: -1s;
   animation-duration: 4.5s;
@@ -173,13 +175,22 @@ body::before {
 .bobler div:nth-child(4) img {
   width: 14vw;
   padding-top: 80%;
+  filter: blur(3px);
   animation-delay: -3s;
   animation-duration: 6.5s;
+  mix-blend-mode: exclusion;
 }
 
 .bobler div:nth-child(5) img {
-  width: 10vw;
-  filter: blur(4px);
+  width: 5vw;
+  filter: blur(10px);
+  padding-top: 50%;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+}
+
+.bobler div:nth-child(6) img {
+  width: 13vw;
   padding-top: 50%;
   animation-delay: -0.5s;
   animation-duration: 5.8s;
@@ -557,6 +568,10 @@ body::before {
   margin: 1rem 0;
 }
 
+.brød p {
+  padding-bottom: 1rem;
+}
+
 .projekt-beskrivelse h3 {
   font-size: 2rem;
   font-weight: 800;
@@ -575,6 +590,7 @@ body::before {
 .projekt-billede {
   width: 40%;
   height: auto;
+  z-index: 100;
 }
 
 .projekt-billede img {
@@ -634,6 +650,7 @@ body::before {
 .carousel-info {
   flex: 0 0 calc(100% / 3);
   text-align: center;
+  z-index: 100;
 }
 
 .carousel-info img {

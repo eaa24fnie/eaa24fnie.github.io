@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 
 export default function ProjecttRow({ client }) {
+  console.log(client.description);
   return (
     <section className="project-row">
       <div className="projekt-beskrivelse">
@@ -8,23 +9,13 @@ export default function ProjecttRow({ client }) {
           <p>{client.kategori}</p>
         </div>
         <h3>{client.title}</h3>
-        <p className="brød">{client.description}</p>
-        <h4>{client.year}</h4>
-        {/* <section className="client-links">
-          {client.links.map((link, index) => (
-            <a
-              key={`${client.id}-${index}`}
-              href={link.url}
-              rel="noreferrer"
-              target="_blank"
-            >
-              {link.text} <i className="ion-ios-arrow-forward"></i>
-              <i className="ion-ios-arrow-forward"></i>{" "}
-            </a>
+        <div className="brød">
+          {client.description.map((text, index) => (
+            <p key={index}>{text}</p>
           ))}
-          <br />
-          <NavLink to={`/clients/${client.id}`}>Læs mere</NavLink>
-        </section> */}
+        </div>
+
+        <h4>{client.year}</h4>
       </div>
       <div className="projekt-billede">
         <img src={client.image} alt={client.title} />
