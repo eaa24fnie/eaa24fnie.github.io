@@ -492,6 +492,10 @@ body::before {
   opacity: 0;
 }
 
+.puzzle.show {
+  display: block;
+}
+
 .kompetancer:hover + .puzzle {
   display: block;
   left: 27vw;
@@ -1192,6 +1196,10 @@ footer div {
     font-size: 1.5rem;
   }
 
+  .aboutme {
+    height: 65vh;
+  }
+
   .hoved {
     height: 50vh;
   }
@@ -1254,6 +1262,12 @@ footer div {
   .book,
   .football {
     scale: 0.1;
+    left: 0;
+  }
+
+  .kompetancer:hover + .puzzle,
+  .funfact:hover + .building {
+    top: -150px;
   }
 
   .navn {
