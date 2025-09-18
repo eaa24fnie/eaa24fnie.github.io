@@ -1,8 +1,8 @@
-import { NavLink } from "react-router";
+import React, { forwardRef } from "react";
 
-export default function ProjecttRow({ client }) {
+const ProjectRow = forwardRef(({ client }, ref) => {
   return (
-    <section className="project-row">
+    <section ref={ref} className="project-row pop-up">
       <div className="projekt-beskrivelse">
         <div className="kategori">
           <p>{client.kategori}</p>
@@ -18,7 +18,6 @@ export default function ProjecttRow({ client }) {
           <h4>{client.year}</h4>
           <div className="links">
             {client.links &&
-              client.links.length > 0 &&
               client.links.map((link, index) => (
                 <h4 key={index}>
                   <a href={link.url} target="_blank" rel="noopener noreferrer">
@@ -34,4 +33,6 @@ export default function ProjecttRow({ client }) {
       </div>
     </section>
   );
-}
+});
+
+export default ProjectRow;

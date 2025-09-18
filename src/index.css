@@ -790,10 +790,11 @@ body::before {
   opacity: 1;
   transition: opacity 0.3s;
   cursor: pointer;
+  z-index: 9000;
 }
 
 .poster-item.dimmed {
-  opacity: 0.6;
+  opacity: 0.2;
 }
 
 .poster-name {
@@ -866,6 +867,17 @@ footer div {
 .socials img {
   width: 30px;
   transition: 0.2s;
+}
+
+.pop-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.pop-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Tablet styles */
