@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./PosterGrid.css";
 
 export default function PosterGrid() {
   const [posters, setPosters] = useState([]);
