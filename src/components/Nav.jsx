@@ -44,7 +44,7 @@ export default function Nav() {
               </a>
             </div>
             <a onClick={closeModal}>
-              <img src="../../public/img/luk.svg" alt="" />
+              <img src="/img/luk.svg" alt="" />
             </a>
           </div>
         </div>

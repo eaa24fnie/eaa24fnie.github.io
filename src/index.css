@@ -117,14 +117,18 @@ body::before {
   gap: 0.2rem;
   text-align: center;
   height: 100vh;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
+}
+
+.intro-text img {
+  padding-top: 20vh;
 }
 
 .intro-text h2 {
-  font-size: 11vw;
+  font-size: 15vw;
   color: var(--black);
   font-weight: 900;
-  margin-bottom: -30px;
+  margin-bottom: -80px;
 }
 
 .intro-text h1 {
@@ -774,10 +778,27 @@ footer {
   margin-top: 5%;
 }
 
+footer div {
+  width: 33vw;
+}
+
+.footer-name {
+  text-align: left;
+}
+
+.footer-name p {
+  text-transform: capitalize;
+}
+
 .socials {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.socials div {
+  display: flex;
+  justify-content: end;
   gap: 1rem;
 }
 
