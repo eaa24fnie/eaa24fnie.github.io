@@ -286,7 +286,7 @@ export default function About() {
               )
             }
           >
-            Kompetencer
+            Skills
           </button>
           <img className="puzzle" src="/img/puzzle.svg" alt="" />
           <button

@@ -117,7 +117,8 @@ body::before {
   gap: 0.2rem;
   text-align: center;
   height: 100vh;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
+  line-height: 1;
 }
 
 .intro-text img {
@@ -125,21 +126,27 @@ body::before {
 }
 
 .intro-text h2 {
-  font-size: 15vw;
-  color: var(--black);
+  font-size: 25vw;
+  color: var(--primary-color);
   font-weight: 900;
-  margin-bottom: -80px;
+  line-height: 0.8;
 }
 
 .intro-text h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 900;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .intro-text h3 {
-  font-size: 1rem;
+  font-size: 1.3vw;
   color: var(--black);
+}
+
+.pil img {
+  width: 100px;
+  padding-top: 10vh;
+  z-index: 1000;
 }
 
 .bobler {
@@ -148,7 +155,7 @@ body::before {
   bottom: 0;
   margin-bottom: -15rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   pointer-events: none;
   user-select: none;
 }
@@ -173,7 +180,8 @@ body::before {
 
 .bobler div:nth-child(3) img {
   width: 3vw;
-  filter: blur(14px);
+  filter: blur(30px);
+  display: none;
   padding-top: 300%;
   animation-delay: -1s;
   animation-duration: 4.5s;
@@ -347,7 +355,7 @@ body::before {
 .emne {
   color: var(--white);
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   background: var(--primary-color);
   width: auto;
   position: absolute;
@@ -377,6 +385,7 @@ body::before {
   left: 35vw;
   transition: 0.5s;
   scale: 0.1;
+  opacity: 0;
 }
 
 .fritid:hover + .football {
@@ -384,6 +393,7 @@ body::before {
   left: 42vw;
   scale: 0.5;
   top: -80px;
+  opacity: 100;
 }
 
 .erfaring {
@@ -405,6 +415,7 @@ body::before {
   left: 35vw;
   transition: 0.5s;
   scale: 0.1;
+  opacity: 0;
 }
 
 .erfaring:hover + .book {
@@ -413,6 +424,7 @@ body::before {
   scale: 0.5;
   top: -20px;
   transform: rotate(20deg);
+  opacity: 100;
 }
 
 .kompetancer {
@@ -435,6 +447,7 @@ body::before {
   left: 35vw;
   transition: 0.5s;
   scale: 0.1;
+  opacity: 0;
 }
 
 .kompetancer:hover + .puzzle {
@@ -443,6 +456,7 @@ body::before {
   scale: 0.4;
   top: -100px;
   transform: rotate(20deg);
+  opacity: 100;
 }
 
 .kompetancer-ikoner {
@@ -485,6 +499,7 @@ body::before {
   left: 35vw;
   transition: 0.5s;
   scale: 0.1;
+  opacity: 0;
 }
 
 .funfact:hover + .building {
@@ -493,6 +508,7 @@ body::before {
   scale: 0.5;
   top: -100px;
   transform: rotate(-20deg);
+  opacity: 100;
 }
 
 .emne:hover {
@@ -584,7 +600,7 @@ body::before {
 
 .portfolio-intro h4 {
   font-weight: 800;
-  font-size: 6rem;
+  font-size: 5.5vw;
   color: var(--primary-color);
   line-height: 1;
 }
@@ -805,4 +821,379 @@ footer div {
 .socials img {
   width: 30px;
   transition: 0.2s;
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+  .header {
+    width: auto;
+    gap: 40px;
+  }
+
+  .home div:nth-child(5) {
+    display: none;
+  }
+
+  .logo p {
+    font-size: 1.2rem;
+  }
+
+  .intro-text {
+    height: 100vh;
+  }
+
+  .intro-text h2 {
+    font-size: 25vw;
+  }
+
+  .intro-text h1 {
+    font-size: 8vw;
+  }
+
+  .intro-text h3 {
+    font-size: 2vw;
+    width: 40vw;
+    text-align: center;
+  }
+
+  .bobler {
+    bottom: 15vh;
+    z-index: -1;
+    transform: scale(2);
+  }
+
+  .gitter {
+    width: 100vw;
+  }
+
+  .projekt-beskrivelse,
+  .projekt-billede {
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .project-details {
+    margin-top: 15vh;
+  }
+
+  .project-row {
+    margin: 0 7%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .year-link {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .portfolio-intro {
+    height: auto;
+    margin: 0px;
+  }
+
+  .portfolio-intro h4 {
+    font-size: 3rem;
+  }
+
+  .projekt-beskrivelse .brød {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .carousel-intro .kategori p {
+    font-size: 2.2rem;
+  }
+
+  .carousel-intro p {
+    font-size: 1.1rem;
+    max-width: 75%;
+  }
+
+  .carousel-intro {
+    max-width: 75%;
+  }
+
+  .hoved {
+    height: 50vh;
+  }
+
+  .hoved-mig {
+    width: 50%;
+  }
+
+  .emne {
+    scale: 1.2;
+  }
+
+  .fritid,
+  .erfaring,
+  .kompetancer,
+  .funfact {
+    transform: rotate(0);
+  }
+
+  .fritid,
+  .erfaring {
+    margin-left: 5rem;
+  }
+
+  .kompetancer,
+  .funfact {
+    margin-right: 5rem;
+  }
+
+  .fritid,
+  .kompetancer {
+    top: 50vh;
+  }
+
+  .erfaring,
+  .funfact {
+    top: 60vh;
+  }
+
+  .kompetancer:hover + .puzzle,
+  .funfact:hover + .building {
+    left: -90px;
+  }
+
+  .kompetancer:hover + .puzzle,
+  .funfact:hover + .building,
+  .erfaring:hover + .book,
+  .fritid:hover + .football {
+    scale: 0.3;
+  }
+
+  .puzzle,
+  .building,
+  .book,
+  .football {
+    scale: 0.1;
+  }
+
+  .navn {
+    line-height: 1;
+  }
+
+  .mig-tekst {
+    max-width: 80%;
+  }
+
+  .mig-tekst p {
+    font-size: 1.3rem;
+  }
+
+  .kompetancer-ikoner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 0 6rem 0;
+    height: 35vh;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .footer-name {
+    text-align: center;
+  }
+
+  footer div {
+    width: 100vw;
+    transform: scale(1.6);
+  }
+
+  .socials div {
+    justify-content: center;
+  }
+}
+
+/* Phones: up to 600px */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    background-color: var(--white);
+  }
+
+  .home div:nth-child(5) {
+    display: none;
+  }
+
+  .logo p {
+    font-size: 1rem;
+  }
+
+  .intro-text {
+    height: 100vh;
+  }
+
+  .intro-text h2 {
+    font-size: 25vw;
+    margin-bottom: -10px;
+  }
+
+  .intro-text h1 {
+    font-size: 9vw;
+  }
+
+  .intro-text h3 {
+    font-size: 1rem;
+    width: 40vw;
+    text-align: center;
+  }
+
+  .gitter {
+    width: 100vw;
+  }
+
+  .bobler {
+    bottom: 15vh;
+    z-index: -1;
+    transform: scale(2);
+  }
+
+  .projekt-beskrivelse,
+  .projekt-billede {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .project-row {
+    margin: 0 5%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .year-link {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .portfolio-intro {
+    height: auto;
+    margin: 0px;
+  }
+
+  .portfolio-intro h4 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-intro .kategori p {
+    font-size: 2rem;
+  }
+
+  .carousel-intro p {
+    font-size: 1rem;
+    max-width: 70%;
+  }
+
+  .carousel-intro {
+    max-width: 70%;
+  }
+
+  .hoved {
+    height: 50vh;
+  }
+
+  .hoved-mig {
+    width: 50%;
+  }
+
+  .emne {
+    scale: 1.2;
+  }
+
+  .fritid,
+  .erfaring,
+  .kompetancer,
+  .funfact {
+    transform: rotate(0);
+    padding: 0.5rem 1rem;
+  }
+
+  .fritid,
+  .erfaring {
+    margin-left: 5rem;
+  }
+
+  .kompetancer,
+  .funfact {
+    margin-right: 5rem;
+  }
+
+  .fritid,
+  .kompetancer {
+    top: 50vh;
+  }
+
+  .erfaring,
+  .funfact {
+    top: 60vh;
+  }
+
+  .kompetancer:hover + .puzzle,
+  .funfact:hover + .building {
+    left: -90px;
+  }
+
+  .kompetancer:hover + .puzzle,
+  .funfact:hover + .building,
+  .erfaring:hover + .book,
+  .fritid:hover + .football {
+    scale: 0.3;
+  }
+
+  .puzzle,
+  .building,
+  .book,
+  .football {
+    scale: 0.1;
+  }
+
+  .navn {
+    line-height: 1;
+  }
+
+  .mig-tekst {
+    max-width: 80%;
+  }
+
+  .mig-tekst p {
+    font-size: 1.3rem;
+  }
+
+  .kompetancer-ikoner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0 5rem 0;
+    height: 30vh;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-name {
+    text-align: center;
+  }
+
+  footer div {
+    width: 100vw;
+  }
+
+  .socials div {
+    justify-content: center;
+  }
 }
