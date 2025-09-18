@@ -4,27 +4,38 @@ import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
   const goToPortfolio = () => {
-    navigate("/"); // Navigate to home page first
+    navigate("/");
     setTimeout(() => {
       const el = document.getElementById("portfolio");
       if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 50); // small delay to ensure page rendered
+    }, 50);
   };
 
   return (
     <>
       <nav className="navbar">
-        <a onClick={goToPortfolio}>Portfolio</a>{" "}
-        <NavLink to="/about">Om mig</NavLink>
-        <a className="contact-button" onClick={openModal}>
-          Kontakt
-        </a>
+        {/* Hamburger button for small screens */}
+        <button className="hamburger" onClick={toggleDropdown}>
+          ☰
+        </button>
+
+        {/* Menu links */}
+        <div className={`nav-links ${isDropdownOpen ? "open" : ""}`}>
+          <a onClick={goToPortfolio}>Portfolio</a>
+          <NavLink to="/about">Om mig</NavLink>
+          <a className="contact-button" onClick={openModal}>
+            Kontakt
+          </a>
+        </div>
       </nav>
 
       {/* Modal (popup) */}

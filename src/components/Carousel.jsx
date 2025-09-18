@@ -1,36 +1,32 @@
 import { useState, useEffect } from "react";
+import "./PosterGrid.css";
 
-export default function Carousel() {
-  const [clients, setClients] = useState([]);
-  const [index, setIndex] = useState(0);
+export default function PosterGrid() {
+  const [posters, setPosters] = useState([]);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [selectedPoster, setSelectedPoster] = useState(null);
 
   useEffect(() => {
-    async function getData() {
-      const response = await fetch("/poster.json"); // served from /public
-      const data = await response.json();
-      setClients(data);
+    async function fetchPosters() {
+      try {
+        const response = await fetch("/poster.json");
+        if (!response.ok) throw new Error("Failed to fetch posters");
+        const data = await response.json();
+        setPosters(data);
+      } catch (err) {
+        console.error(err);
+      }
     }
-    getData();
+    fetchPosters();
   }, []);
 
-  const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % clients.length);
-  };
+  if (posters.length === 0) return <p>Loading posters...</p>;
 
-  const prevSlide = () => {
-    setIndex((prev) => (prev - 1 + clients.length) % clients.length);
-  };
-
-  if (clients.length === 0) return <p>Loading...</p>;
-
-  // Get 3 posters starting at current index
-  const visibleClients = clients
-    .slice(index, index + 3)
-    .concat(clients.slice(0, Math.max(0, index + 3 - clients.length)));
+  const visiblePosters = posters.slice(0, 9);
 
   return (
-    <div>
-      <div className="projekt-beskrivelse carousel-intro">
+    <div className="poster-grid-container">
+      <div className="projekt-beskrivelse">
         <div className="kategori">
           <p>PERSONLIG</p>
         </div>
@@ -39,24 +35,32 @@ export default function Carousel() {
         </p>
       </div>
 
-      <div className="carousel">
-        <button className="carousel-btn" onClick={prevSlide}>
-          ⟨
-        </button>
-
-        <div className="carousel-container">
-          {visibleClients.map((client, i) => (
-            <div key={i} className="carousel-info">
-              <img src={client.image} alt={client.title} />{" "}
-              <h3 className="carousel-name">{client.title}</h3>
-            </div>
-          ))}
-        </div>
-
-        <button className="carousel-btn" onClick={nextSlide}>
-          ⟩
-        </button>
+      <div className="poster-grid">
+        {visiblePosters.map((poster, i) => (
+          <div
+            key={i}
+            className={`poster-item ${
+              hoveredIndex !== null && hoveredIndex !== i ? "dimmed" : ""
+            }`}
+            onMouseEnter={() => setHoveredIndex(i)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            onClick={() => setSelectedPoster(poster)}
+          >
+            <img
+              src={poster.image}
+              alt={poster.title}
+              className="poster-image"
+            />
+            <h3 className="poster-name">{poster.title}</h3>
+          </div>
+        ))}
       </div>
+
+      {selectedPoster && (
+        <div className="poster-overlay" onClick={() => setSelectedPoster(null)}>
+          <img src={selectedPoster.image} alt={selectedPoster.title} />
+        </div>
+      )}
     </div>
   );
 }
