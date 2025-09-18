@@ -213,10 +213,22 @@ body::before {
   color: var(--black);
 }
 
+.pil {
+  transition: 0.3s;
+}
+
 .pil img {
   width: 100px;
   padding-top: 10vh;
   z-index: 1000;
+}
+
+.pil:hover {
+  transform: scale(1.2);
+}
+
+#portfolio {
+  scroll-margin-top: 20vh; /* 20% of viewport height */
 }
 
 .bobler {
@@ -709,6 +721,11 @@ body::before {
   color: var(--primary-color);
 }
 
+.carousel-intro-p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
 .poster-image {
   width: 100%;
 }
@@ -854,7 +871,7 @@ footer div {
 /* Tablet styles */
 @media only screen and (max-width: 1024px) and (min-width: 601px) {
   .header {
-    width: auto;
+    width: 100%;
     gap: 40px;
   }
 
@@ -990,7 +1007,7 @@ footer div {
 
   .kompetancer:hover + .puzzle,
   .funfact:hover + .building {
-    left: -90px;
+    left: 70px;
   }
 
   .kompetancer:hover + .puzzle,
@@ -1208,11 +1225,16 @@ footer div {
     left: -90px;
   }
 
+  .erfaring:hover + .book,
+  .fritid:hover + .football {
+    left: 130px;
+  }
+
   .kompetancer:hover + .puzzle,
   .funfact:hover + .building,
   .erfaring:hover + .book,
   .fritid:hover + .football {
-    scale: 0.3;
+    scale: 0.2;
   }
 
   .puzzle,
