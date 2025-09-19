@@ -39,7 +39,7 @@ body {
 body::before {
   content: "";
   inset: 0;
-  background: url(img/grain-2.webp);
+  background: url(./img/grain-2.webp);
   background-repeat: repeat;
   background-size: 20%;
   z-index: 10;
