@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import Nav from "./Nav";
-import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isShrunk, setIsShrunk] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +24,16 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <header className={`header ${isShrunk ? "shrink" : ""}`}>
       <div className="logo">
-        <NavLink to="/">
+        <NavLink to="/" onClick={handleLogoClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 842.3 627.3"
