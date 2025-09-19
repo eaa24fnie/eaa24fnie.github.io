@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "The Shining",
+    "image": "img/the-shining.webp"
+  },
+
+  {
+    "id": 2,
+    "title": "Harry Potter and the philosopher's stone",
+    "image": "img/hpatps.webp"
+  },
+
+  {
+    "id": 3,
+    "title": "Ghost of Tsushima",
+    "image": "img/ghost-of-tsushima.webp"
+  },
+
+  {
+    "id": 4,
+    "title": "Spirited Away",
+    "image": "img/spirited-away.webp"
+  },
+  {
+    "id": 5,
+    "title": "How to train your dragon",
+    "image": "img/httyd.webp"
+  },
+
+  {
+    "id": 6,
+    "title": "Blade Runner 2049",
+    "image": "img/blade-runner.webp"
+  },
+
+  {
+    "id": 7,
+    "title": "Harry Potter and the Chamber of Secrets",
+    "image": "img/hpatcos.webp"
+  },
+
+  {
+    "id": 8,
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "image": "img/hpatpoa.webp"
+  },
+
+  {
+    "id": 9,
+    "title": "Parasite",
+    "image": "img/parasite.webp"
+  }
+]

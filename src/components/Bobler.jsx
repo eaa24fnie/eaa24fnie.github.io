@@ -18,6 +18,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 5}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -31,6 +32,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 0.5}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -44,6 +46,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 0.4}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -57,6 +60,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 2}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -70,6 +74,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 0.4}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -83,6 +88,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 1}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -96,6 +102,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 1.5}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -109,6 +116,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 0.4}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -122,6 +130,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 1.5}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img
@@ -135,6 +144,7 @@ export default function Bobler() {
         style={{
           transform: `translateY(-${offset * 2}px)`,
           transition: "transform 0.1s linear",
+          filter: "url(#noiseDistort)",
         }}
       >
         <img

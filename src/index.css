@@ -39,9 +39,11 @@ body {
 body::before {
   content: "";
   inset: 0;
-  background: url(img/grain.png) repeat;
+  background: url(img/grain-2.webp);
+  background-repeat: repeat;
+  background-size: 20%;
   z-index: 10;
-  opacity: 0.4;
+  opacity: 1;
   position: fixed;
   pointer-events: none;
   user-select: none;
@@ -187,7 +189,6 @@ body::before {
   gap: 0.2rem;
   text-align: center;
   height: 100vh;
-  padding-bottom: 10vh;
   line-height: 1;
 }
 
@@ -752,7 +753,7 @@ body::before {
 .projekt-billede {
   width: 40%;
   height: auto;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .projekt-billede img {
