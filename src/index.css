@@ -43,7 +43,7 @@ body::before {
   background-repeat: repeat;
   background-size: 20%;
   z-index: 10;
-  opacity: 1;
+  opacity: 0.5;
   position: fixed;
   pointer-events: none;
   user-select: none;
@@ -345,6 +345,36 @@ body::before {
   animation-delay: -0.5s;
   animation-duration: 5.8s;
   z-index: 5;
+}
+
+.bobler div:nth-child(11) {
+  position: absolute;
+  left: 0;
+  margin: 100vw 0 0 -40vw;
+}
+
+.bobler div:nth-child(11) img {
+  width: 60vw;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.bobler div:nth-child(12) {
+  position: absolute;
+  right: -5vw;
+  margin: 170vw 0 0 5vw;
+}
+
+.bobler div:nth-child(12) img {
+  width: 40vw;
+  animation-delay: -0.5s;
+  animation-duration: 5.8s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0.1;
 }
 
 @keyframes float {
