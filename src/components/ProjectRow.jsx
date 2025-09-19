@@ -1,5 +1,3 @@
-import { NavLink } from "react-router";
-
 export default function ProjecttRow({ client }) {
   return (
     <section className="project-row">
