@@ -8,7 +8,7 @@ import ProjectDetail from "./pages/ProjectDetails";
 export default function App() {
   return (
     <>
-      <svg style={{ display: "none" }}>
+      <svg className="grain">
         <filter id="noiseDistort">
           <feTurbulence
             type="fractalNoise"
