@@ -247,7 +247,7 @@ export default function About() {
                     </a>
                     <a href="">
                       <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.webp"
                         alt=""
                       />
                     </a>

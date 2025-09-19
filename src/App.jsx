@@ -16,7 +16,6 @@ export default function App() {
             numOctaves="2"
             seed="2"
           >
-            {/* Animate baseFrequency to simulate moving noise */}
             <animate
               attributeName="baseFrequency"
               values="0.65;0.75;0.7;0.72;0.68;0.7"
@@ -25,7 +24,6 @@ export default function App() {
             />
           </feTurbulence>
           <feDisplacementMap in="SourceGraphic" scale="20">
-            {/* Slightly animate scale to add extra jitter */}
             <animate
               attributeName="scale"
               values="18;22;20;21;19;20"

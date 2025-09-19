@@ -49,6 +49,9 @@ export default function PosterGrid() {
               src={poster.image}
               alt={poster.title}
               className="poster-image"
+              link
+              rel="preload"
+              loading="lazy"
             />
             <h3 className="poster-name">{poster.title}</h3>
           </div>

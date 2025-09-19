@@ -30,7 +30,13 @@ export default function ProjecttRow({ client }) {
         </div>
       </div>
       <div className="projekt-billede">
-        <img src={client.image} alt={client.title} />
+        <img
+          src={client.image}
+          alt={client.title}
+          link
+          rel="preload"
+          loading="lazy"
+        />
       </div>
     </section>
   );
