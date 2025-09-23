@@ -44,7 +44,7 @@ export default function Nav() {
           <div className="kontakt-overlay" onClick={(e) => e.stopPropagation()}>
             <p>fnielsen1@live.dk</p>
             <div className="socials">
-              <a href="https://www.linkedin.com/feed/">
+              <a href="https://www.linkedin.com/in/fnielsen1/">
                 <img src="/img/linkedin.webp" alt="Linkedin" />
               </a>
               <a href="https://dribbble.com/FrederikNielsen">

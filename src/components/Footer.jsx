@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
       <div className="socials">
         <div>
-          <a href="https://www.linkedin.com/feed/">
+          <a href="https://www.linkedin.com/in/fnielsen1/">
             <img src="/img/linkedin.webp" alt="Linkedin" />
           </a>
           <a href="https://dribbble.com/FrederikNielsen">
