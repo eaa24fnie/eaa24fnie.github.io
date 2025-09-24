@@ -3,11 +3,9 @@
     "id": 1,
     "title": "ZeroBuzzBrew",
     "year": 2025,
-    "description": [
-      "Zero Buzz Brew er et projekt, hvor opgaven var at udvikle et koncept for en alkoholfri øl til unge, der gerne vil have muligheden for at drikke mindre uden at føle sig udenfor. Der blev arbejdet med alt fra visuel identitet og design af dåserne til at lave en digital løsning med webshop og branding. Idéen er at skabe en “pause-øl”, som blender ind i festkulturen og gør det lettere at vælge alkoholfrit, uden at det bliver et stort statement.",
+    "description1": "Zero Buzz Brew er et projekt, hvor opgaven var at udvikle et koncept for en alkoholfri øl til unge, der gerne vil have muligheden for at drikke mindre uden at føle sig udenfor. Der blev arbejdet med alt fra visuel identitet og design af dåserne til at lave en digital løsning med webshop og branding. Idéen er at skabe en “pause-øl”, som blender ind i festkulturen og gør det lettere at vælge alkoholfrit, uden at det bliver et stort statement.",
 
-      "Jeg lærte, hvor vigtigt det er at forstå målgruppen og deres behov, når man udvikler et produkt. Jeg fik erfaring med at bruge metoder som interviews, persona og prototyper til at teste idéer. Derudover lærte jeg at bygge en webshop fra bunden, samtidig med at blive bedre til at samarbejde og bruge GitHub i praksis"
-    ],
+    "description2": "Jeg lærte, hvor vigtigt det er at forstå målgruppen og deres behov, når man udvikler et produkt. Jeg fik erfaring med at bruge metoder som interviews, persona og prototyper til at teste idéer. Derudover lærte jeg at bygge en webshop fra bunden, samtidig med at blive bedre til at samarbejde og bruge GitHub i praksis",
     "kategori": "skole",
     "image": "/img/zerobuzz-mockup.webp",
     "links": [
@@ -21,9 +19,8 @@
     "id": 2,
     "title": "Diverse arbejds opgaver",
     "year": "2022-2024",
-    "description": [
-      "I mit tidligere job som grafisk designer arbejdede jeg med en bred vifte af opgaver, der spændte fra emballagedesign til større visuelle løsninger. En stor del af mit arbejde bestod i at udvikle emballage til produkter, som mange forbrugere kender fra hylderne i dagligvarebutikkerne – eksempelvis slikindpakning, produktetiketter og salgsdisplays. Derudover fik jeg også erfaring med mere specialiserede opgaver, som blandt andet bilindpakning (wrapping) og design af store messestande og reklameelementer. Mine arbejdsopgaver var derfor meget varierede, hvilket gav mig en solid forståelse for både små og store grafiske projekter.",
-
+    "description1": "I mit tidligere job som grafisk designer arbejdede jeg med en bred vifte af opgaver, der spændte fra emballagedesign til større visuelle løsninger. En stor del af mit arbejde bestod i at udvikle emballage til produkter, som mange forbrugere kender fra hylderne i dagligvarebutikkerne – eksempelvis slikindpakning, produktetiketter og salgsdisplays. Derudover fik jeg også erfaring med mere specialiserede opgaver, som blandt andet bilindpakning (wrapping) og design af store messestande og reklameelementer. Mine arbejdsopgaver var derfor meget varierede, hvilket gav mig en solid forståelse for både små og store grafiske projekter.",
+    "description2": [
       "At være en del af et reklamebureau lærte mig især vigtigheden af at overholde deadlines og arbejde effektivt under tidspres. Mange opgaver havde faste tidsrammer, hvor kunden eksempelvis kun havde bestilt én times arbejde, og derfor skulle hele projektet løses hurtigt og præcist. Denne erfaring har givet mig en god disciplin i at strukturere mit arbejde og levere resultater af høj kvalitet, selv når der er travlt.",
 
       "Jeg lærte også meget om det at indgå i en professionel arbejdskultur, hvor det at møde ind på kontoret hver dag, samarbejde med kolleger og have en fast rutine var en naturlig del af hverdagen. Det gav mig værdifuld erfaring i at kommunikere med både kolleger og kunder, håndtere flere projekter samtidig og holde et højt fagligt niveau."
@@ -36,11 +33,9 @@
     "id": 3,
     "title": "Bevar Radar",
     "year": 2024,
-    "description": [
-      "Bevar Radar er et projekt, hvor opgaven var at udvikle en digital platform til at engagere folk og skabe støtte til spillestedet Radar i Aarhus. Fokus var på live-musik, fællesskab og ungdommelig energi. Jeg arbejdede med alt fra visuel identitet og logo-design til wireframes, mockups og en funktionel digital løsning med call-to-actions, donationer og Instagram-integration. Målet var at skabe en stærk, visuel oplevelse, som tydeligt formidler Radars betydning og gør det nemt at støtte op om stedet.",
+    "description1": "Bevar Radar er et projekt, hvor opgaven var at udvikle en digital platform til at engagere folk og skabe støtte til spillestedet Radar i Aarhus. Fokus var på live-musik, fællesskab og ungdommelig energi. Jeg arbejdede med alt fra visuel identitet og logo-design til wireframes, mockups og en funktionel digital løsning med call-to-actions, donationer og Instagram-integration. Målet var at skabe en stærk, visuel oplevelse, som tydeligt formidler Radars betydning og gør det nemt at støtte op om stedet.",
 
-      "Jeg lærte, hvor vigtigt det er at formidle et budskab klart gennem design og visuelle virkemidler. Jeg fik erfaring med at udvikle identitet, teste layout og typografi gennem skitser og mockups samt skabe en brugervenlig digital løsning. Derudover styrkede jeg mine kompetencer i at tænke strategisk omkring målgruppe, engagement og digital kommunikation."
-    ],
+    "description2": "Jeg lærte, hvor vigtigt det er at formidle et budskab klart gennem design og visuelle virkemidler. Jeg fik erfaring med at udvikle identitet, teste layout og typografi gennem skitser og mockups samt skabe en brugervenlig digital løsning. Derudover styrkede jeg mine kompetencer i at tænke strategisk omkring målgruppe, engagement og digital kommunikation.",
     "kategori": "Skole",
     "image": "/img/radar-mockup.webp",
     "links": [

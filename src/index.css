@@ -426,7 +426,6 @@ body::before {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10%;
 }
 
 .portfolio-side {
@@ -717,9 +716,14 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding-bottom: 10%;
   flex-wrap: wrap;
+  flex-direction: row;
   margin: 0 15%;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
 }
 
 .projekt-beskrivelse {
@@ -735,11 +739,35 @@ body::before {
   text-transform: none;
   font-weight: 300;
   line-height: 1.5rem;
-  margin: 1rem 0;
 }
 
 .brød p {
   padding-bottom: 1rem;
+}
+
+.seemore {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  width: fit-content;
+  display: block; /* makes sure button is its own row */
+  margin-left: auto;
+}
+
+.expandable {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.expandable.open {
+  max-height: 1000px; /* big enough to fit content */
+  opacity: 1;
 }
 
 .links {
@@ -789,6 +817,7 @@ body::before {
   background: var(--primary-color);
   width: fit-content;
   padding: 1rem 2rem;
+  margin-bottom: 1rem;
 }
 
 .projekt-beskrivelse h4 {
@@ -947,11 +976,14 @@ footer div {
     display: none;
   }
 
+  .seemore {
+    margin: 0 auto;
+  }
+
   .poster-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 20px 15%;
   }
 
   .poster-intro-p {
@@ -1142,6 +1174,10 @@ footer div {
     color: var(--black);
   }
 
+  .seemore {
+    margin: 0 auto;
+  }
+
   .shrink.hamburger {
     display: block;
     color: var(--white);
@@ -1167,13 +1203,6 @@ footer div {
 
   .nav-links.open {
     display: flex;
-  }
-
-  .poster-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    margin: 20px 15%;
   }
 
   .poster-intro-p {
@@ -1214,11 +1243,8 @@ footer div {
     bottom: 15vh;
     z-index: -1;
     top: 80vh;
+    transform: scale(2);
   }
-
-  /* .bobler div {
-    scale: 2;
-  } */
 
   .projekt-beskrivelse,
   .projekt-billede {
@@ -1344,10 +1370,16 @@ footer div {
     flex-wrap: wrap;
   }
 
+  .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
   .poster-grid-container {
     transform: scale(0.6);
     padding: 0;
-    display: none;
+    margin: -150vh 0;
   }
 
   footer {

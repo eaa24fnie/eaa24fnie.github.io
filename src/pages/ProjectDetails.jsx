@@ -21,8 +21,8 @@ export default function ProjectDetails() {
         <h4>Se dig omkring.</h4>
       </div>
       <section id="clients">
-        {clients.map((client) => (
-          <ProjectRow client={client} key={client.id} />
+        {clients.map((client, index) => (
+          <ProjectRow key={client.id} client={client} index={index} />
         ))}
       </section>
     </div>

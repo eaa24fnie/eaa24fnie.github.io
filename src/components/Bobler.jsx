@@ -25,8 +25,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-01.webp"
           alt="Gradient bobble"
           className="bobble bobble-1"
-          link
-          rel="preload"
         />
       </div>
 
@@ -41,8 +39,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-02.webp"
           alt="Gradient bobble"
           className="bobble bobble-2"
-          link
-          rel="preload"
         />
       </div>
 
@@ -57,8 +53,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-02.webp"
           alt="Gradient bobble"
           className="bobble bobble-2"
-          link
-          rel="preload"
         />
       </div>
 
@@ -73,8 +67,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-03.webp"
           alt="Gradient bobble"
           className="bobble bobble-1"
-          link
-          rel="preload"
         />
       </div>
 
@@ -89,8 +81,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-2"
-          link
-          rel="preload"
         />
       </div>
 
@@ -105,8 +95,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-1"
-          link
-          rel="preload"
         />
       </div>
 
@@ -121,8 +109,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-1"
-          link
-          rel="preload"
         />
       </div>
 
@@ -137,8 +123,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-1"
-          link
-          rel="preload"
         />
       </div>
 
@@ -153,8 +137,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-2"
-          link
-          rel="preload"
         />
       </div>
 
@@ -169,8 +151,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-2"
-          link
-          rel="preload"
         />
       </div>
 
@@ -185,8 +165,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-2"
-          link
-          rel="preload"
         />
       </div>
 
@@ -201,8 +179,6 @@ export default function Bobler() {
           src="/img/gradient-map-bobler-04.webp"
           alt="Gradient bobble"
           className="bobble bobble-1"
-          link
-          rel="preload"
         />
       </div>
     </div>
