@@ -483,7 +483,6 @@ body::before {
   display: block;
   left: 42vw;
   scale: 0.5;
-  top: -80px;
   opacity: 100;
 }
 
@@ -513,7 +512,7 @@ body::before {
   display: block;
   left: 42vw;
   scale: 0.5;
-  top: -20px;
+  top: 50px;
   transform: rotate(20deg);
   opacity: 100;
 }
@@ -599,8 +598,8 @@ body::before {
 
 .funfact:hover + .building {
   display: block;
-  left: 30vw;
-  scale: 0.5;
+  left: 25vw;
+  scale: 0.4;
   top: -100px;
   transform: rotate(-20deg);
   opacity: 100;
@@ -660,7 +659,7 @@ body::before {
 
 .mig-tekst {
   width: fit-content;
-  max-width: 50%;
+  max-width: 70%;
   text-align: center;
   margin-top: 4rem;
   font-size: 1.5rem;
@@ -1214,8 +1213,12 @@ footer div {
   .bobler {
     bottom: 15vh;
     z-index: -1;
-    transform: scale(2);
+    top: 80vh;
   }
+
+  /* .bobler div {
+    scale: 2;
+  } */
 
   .projekt-beskrivelse,
   .projekt-billede {
@@ -1289,14 +1292,18 @@ footer div {
     top: 60vh;
   }
 
+  .projekt-beskrivelse h3 {
+    text-align: center;
+  }
+
   .kompetancer:hover + .puzzle,
   .funfact:hover + .building {
-    left: -90px;
+    left: -110px;
   }
 
   .erfaring:hover + .book,
   .fritid:hover + .football {
-    left: 130px;
+    left: 80px;
   }
 
   .kompetancer:hover + .puzzle,
@@ -1321,6 +1328,7 @@ footer div {
 
   .navn {
     line-height: 1;
+    font-size: 2rem;
   }
 
   .mig-tekst {
@@ -1334,6 +1342,12 @@ footer div {
   .kompetancer-ikoner {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .poster-grid-container {
+    transform: scale(0.6);
+    padding: 0;
+    display: none;
   }
 
   footer {

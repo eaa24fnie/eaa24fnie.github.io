@@ -233,49 +233,49 @@ export default function About() {
               setText(
                 <>
                   <div className="kompetancer-ikoner">
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/HTML">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/CSS">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/JavaScript">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.webp"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/React_(software)">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/Adobe_Photoshop">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/Adobe_Illustrator">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/Adobe_InDesign">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg"
                         alt=""
                       />
                     </a>
-                    <a href="">
+                    <a href="https://en.wikipedia.org/wiki/Figma">
                       <img
                         src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
                         alt=""
